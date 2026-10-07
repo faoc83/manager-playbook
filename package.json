@@ -1,0 +1,16 @@
+{
+  "name": "manager-playbook",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "vite-plugin-md": "^0.22.5"
+  },
+  "dependencies": {
+    "marked": "^11.0.0"
+  }
+}

@@ -5,57 +5,37 @@ import path from 'path'
 import Link from 'next/link'
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync(path.join('resources'))
-  const paths = files
-    .filter(file => file.endsWith('.md'))
-    .map(file => ({
-      params: { slug: file.replace('.md', '') }
-    }))
-  return { paths, fallback: false }
+  const dirName = 'resources'
+  const dirPath = path.join(process.cwd(), dirName)
+  let files = []
+
+  try {
+    files = fs.readdirSync(dirPath)
+      .filter(f => f.endsWith('.md'))
+      .map(f => ({ params: { slug: f.replace('.md', '') } }))
+  } catch (e) {
+    console.error('Error:', e.message)
+  }
+
+  return { paths: files, fallback: false }
 }
 
 export async function getStaticProps({ params }) {
-  const fullPath = path.join('resources', `${params.slug}.md`)
-  const fileContent = fs.readFileSync(fullPath, 'utf-8')
-  return { props: { content: fileContent } }
+  const dirName = 'resources'
+  const fullPath = path.join(process.cwd(), dirName, params.slug + '.md')
+  const content = fs.readFileSync(fullPath, 'utf-8')
+  return { props: { content } }
 }
 
-export default function ResourcePage({ content }) {
+export default function Page({ content }) {
   const router = useRouter()
-
-  if (router.isFallback) {
-    return <div>Loading...</div>
-  }
+  if (router.isFallback) return <div>Loading...</div>
 
   return (
-    <div style={styles.container}>
-      <nav style={styles.nav}>
-        <Link href="/">← Home</Link>
-      </nav>
-      <article style={styles.article}>
-        <ReactMarkdown>{content}</ReactMarkdown>
-      </article>
-      <nav style={styles.nav}>
-        <Link href="/">← Back to Home</Link>
-      </nav>
+    <div style={{maxWidth:'800px',margin:'0 auto',padding:'20px'}}>
+      <nav style={{marginBottom:'20px'}}><Link href="/">← Home</Link></nav>
+      <article><ReactMarkdown>{content}</ReactMarkdown></article>
+      <nav style={{marginTop:'20px'}}><Link href="/">← Back to Home</Link></nav>
     </div>
   )
-}
-
-const styles = {
-  container: {
-    maxWidth: '800px',
-    margin: '0 auto',
-    padding: '20px',
-    minHeight: '100vh',
-    background: 'white',
-  },
-  nav: {
-    marginBottom: '20px',
-    paddingTop: '20px',
-  },
-  article: {
-    lineHeight: '1.7',
-    color: '#333',
-  },
 }

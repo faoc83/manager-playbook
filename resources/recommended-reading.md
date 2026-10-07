@@ -1,10 +1,6 @@
 # Recommended Reading
 
 ## Books
-- The Manager's Path
+- The Manager Path
 - High Output Management
 - Radical Candor
-
-## Online
-- Lara Hogan
-- Will Larson

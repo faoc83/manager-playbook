@@ -1,19 +1,12 @@
 # Maturity Matrix
 
-## Níveis
+## Niveis
 
 ### Junior
-- Tasks com supervisão
-- Aprende constantemente
+Tasks com supervisao
 
 ### Mid
-- Features com autonomia
-- Entrega previsível
+Features com autonomia
 
 ### Senior
-- Sistemas complexos
-- Influencia equipa
-
-### Staff
-- Impacto org-wide
-- Direção técnica
+Sistemas complexos

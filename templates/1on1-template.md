@@ -1,18 +1,11 @@
 # 1:1 Template
 
 ## Info
-- **Engineer:** 
-- **Date:** 
+- Engineer: 
+- Date: 
 
-## Top of Mind
+## Topics
 - 
-
-## Work & Blockers
-- 
-
-## Feedback
-- Positive: 
-- Constructive: 
 
 ## Action Items
 - [ ] 

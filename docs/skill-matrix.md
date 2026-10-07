@@ -1,9 +1,5 @@
 # Skill Matrix
 
-## Objetivo
-
-Mapear competências da equipa.
-
 ## Levels
 
 1. Awareness
@@ -11,9 +7,3 @@ Mapear competências da equipa.
 3. Competent
 4. Proficient
 5. Expert
-
-## Categorias
-
-- Technical skills
-- Soft skills
-- Leadership

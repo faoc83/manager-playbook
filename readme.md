@@ -1,97 +1,54 @@
-# 📘 The Manager's Playbook
+# Managers Playbook 📘
 
-Welcome to **The Manager's Playbook**. This guide is designed to provide actionable frameworks, operational templates, and leadership principles to help you lead high-performing teams effectively.
+> Um guia prático para Engineering Managers sobre performance management, one-on-ones, MBTI, e matrizes de competência.
 
----
+## 🎯 Objetivo
 
-## 📌 Table of Contents
-1. [Core Leadership Principles](#-core-leadership-principles)
-2. [Meeting Cadences & Frameworks](#-meeting-cadences--frameworks)
-3. [Performance Management & Feedback](#-performance-management--feedback)
-4. [Team Dynamics & Goal Setting](#-team-dynamics--goal-setting)
-5. [Operational Templates](#-operational-templates)
+Este playbook foi criado para apoiar managers na sua jornada de liderança de equipas de engenharia. Aqui encontras boas práticas, templates e frameworks testados no dia a dia.
 
----
+## 📚 Conteúdo
 
-## 🤝 Core Leadership Principles
+### Core Topics
 
-Great management balances **people development** with **business execution**. Lean on these four pillars:
+- **[Performance Management](docs/performance-management.md)** - Como gerir e melhorar a performance da equipa
+- **[MBTI Guide](docs/mbti-guide.md)** - Gestão adaptada a perfis de personalidade
+- **[One-on-One](docs/one-on-one.md)** - Estrutura e templates para 1:1s eficazes
+- **[Maturity Matrix](docs/maturity-matrix.md)** - Modelo de maturidade para engenheiros
+- **[Skill Matrix](docs/skill-matrix.md)** - Matriz de competências técnicas e comportamentais
 
-*   **Radical Candor:** Care personally while challenging directly.
-*   **High Accountability, High Autonomy:** Define the *what* and the *why*, but let your team figure out the *how*.
-*   **Psychological Safety:** Foster an environment where teammates feel safe to take risks, voice concerns, and make mistakes.
-*   **Multiplier Mindset:** Your success is measured by the collective output and growth of your team, not your individual contributions.
+### Templates Prontos
 
----
+- [1:1 Meeting Template](templates/1on1-template.md)
+- [Performance Review Template](templates/performance-review-template.md)
+- [PIP Template](templates/pip-template.md)
+- [Feedback Template](templates/feedback-template.md)
+- [Career Development Template](templates/career-development-template.md)
 
-## 🗓️ Meeting Cadences & Frameworks
+### Matrizes
 
-A structured meeting cadence prevents alignment drift and builds trust.
+- [Engineering Maturity Matrix](matrices/engineering-maturity-matrix.md)
+- [Skill Matrix Template](matrices/skill-matrix-template.md)
 
-### 1. The 1:1 Meeting (Weekly / Bi-weekly)
-*   **Owner:** The Direct Report (They drive the agenda).
-*   **Focus:** Career growth, roadblocks, morale, and feedback.
-*   **Suggested Template:**
-    *   *Check-in & Morale* (5 mins): How are you feeling outside of work?
-    *   *Deep Dive* (15 mins): Roadblocks, priorities, and what's top of mind.
-    *   *Career & Growth* (5 mins): Long-term goals and skill development.
-    *   *Feedback Exchange* (5 mins): "What can I start, stop, or keep doing to support you better?"
+## 🚀 Como Usar
 
-### 2. Team Alignment & Standups
-*   **Daily Sync (15 mins):** Focused strictly on daily goals, progress, and immediate blockers.
-*   **Weekly Staff Meeting (45-60 mins):** Metrics review, cross-functional updates, and collaborative problem-solving.
+1. **Para Managers:** Usa como referência para estruturar as tuas práticas de gestão
+2. **Para Novos Managers:** Segue o guia de forma sequencial para aprender os fundamentos
+3. **Para a Organização:** Adapta os templates à realidade da tua equipa
 
----
+## 🛠️ Stack
 
-## 📈 Performance Management & Feedback
+- **Documentação:** Markdown
+- **Deploy:** Vercel
+- **Framework:** Next.js (opcional para navegação)
 
-Feedback should be continuous, objective, and actionable.
+## 📝 Contribuir
 
-### Giving Feedback: The SBI Model
-To eliminate bias and ensure clarity, use the **Situation-Behavior-Impact** framework:
-1.  **Situation:** Anchor your feedback to a specific time and place. *(e.g., "During yesterday's client pitch...")*
-2.  **Behavior:** Describe the observable action. *(e.g., "...you answered the technical questions without confirming the data with engineering...")*
-3.  **Impact:** Explain the consequence of the behavior. *(e.g., "...which caused confusion and led to an incorrect scope timeline being shared.")*
+Sê bem-vindo a contribuir com melhorias! Vê o [guia de contribuição](.github/CONTRIBUTING.md).
+
+## 📄 Licença
+
+MIT License - sente-te livre para usar e adaptar.
 
 ---
 
-## 🎯 Team Dynamics & Goal Setting
-
-Align team efforts using clear metrics and structural frameworks.
-
-*   **OKRs (Objectives and Key Results):** Use *Objectives* to outline inspiring goals, and *Key Results* to make them measurable.
-*   **RACI Matrix:** Clarify project roles explicitly:
-    *   **R**esponsible: The person doing the work.
-    *   **A**ccountable: The single owner approving the work.
-    *   **C**onsulted: Experts providing input.
-    *   **I**nformed: Stakeholders kept up to date.
-
----
-
-## 🛠️ Operational Templates
-
-### 📑 1:1 Agenda Template
-```markdown
-## Date: [Insert Date] | Attendance: [Manager], [Report]
-
-### 🪵 Action Items from Last Time
-- [ ] Action item 1
-- [ ] Action item 2
-
-### 💬 Direct Report Agenda
-- [Topic A]
-- [Topic B]
-
-### 👔 Manager Agenda
-- [Feedback / Alignment Topic]
-
-### 🚀 Next Steps & To-Dos
-- [ ] Action item for Manager
-- [ ] Action item for Report
-```
-
-### 🏁 Project Post-Mortem (Retrospective)
-*   **What went well?** (Celebrate wins and identify repeatable successes)
-*   **What could have gone better?** (Analyze bottlenecks without placing blame)
-*   **What did we learn?** (Extract core institutional knowledge)
-*   **What items will we act on next?** (Assign clear owners and deadlines)
+**Feito com ❤️ para a comunidade de Engineering Management**
